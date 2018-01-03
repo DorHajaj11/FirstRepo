@@ -1,4 +1,4 @@
 FROM microsoft/aspnetcore:1.1
 WORKDIR /app
-COPY ./Publish /app/CodeTweet.Web
-ENTRYPOINT ["dotnet", "/app/CodeTweet.Web/CodeTweet.Web.csproj"]
+COPY ./publish/* /app
+ENTRYPOINT ["dotnet", "/app/CodeTweet.Web.csproj"]
